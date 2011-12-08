@@ -160,7 +160,7 @@ class SubmissionAdmin(admin.ModelAdmin, ExtendibleModelAdminMixin):
         submission.prepared=True
         submission.save()
 
-        messages.info(request, ugettext('Your submission is being sent.')
+        messages.info(request, ugettext('Your submission is being sent.'))
         
         return HttpResponseRedirect('../../')
     
